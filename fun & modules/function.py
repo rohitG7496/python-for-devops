@@ -1,9 +1,6 @@
 import requests
 
 def check_site_status(url):
-    """
-    Checks a single URL and returns a status message.
-    """
     try:
         response = requests.get(url, timeout=5)
         if response.status_code == 200:
